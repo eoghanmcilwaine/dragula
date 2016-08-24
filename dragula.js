@@ -282,7 +282,7 @@ function dragula (initialContainers, options) {
     }
     var reverts = arguments.length > 0 ? revert : o.revertOnSpill;
     var item = _copy || _item;
-    var parent = getParent(item);
+    var parent = getParent(_item);
     var initial = isInitialPlacement(parent);
     if (initial === false && reverts) {
       if (_copy) {
